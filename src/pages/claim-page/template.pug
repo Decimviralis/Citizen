@@ -7,4 +7,8 @@
         .claim-date 21.12.2012
       .address Адрес: ул. Гоголя, 1
       .description {{description}}
+      .photo-block(v-for="photo in photos") {{photo}}
     .right-block
+      .help.button Хочу помочь
+      .same-claim-title похожие жалобы
+      .same-claim.claim(v-for="claim in claims") {{claim}}
