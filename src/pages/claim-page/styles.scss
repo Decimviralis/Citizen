@@ -3,4 +3,188 @@
   height: 100%;
   margin: 0 auto;
   background-color: #f6f1f1;
+
+  .content {
+
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .left-block {
+      margin: 0 0 0 145px;
+      width: 350px;
+      .title-panel {
+
+        display: flex;
+        flex-flow: row nowrap;
+
+        .claim-title {
+          font-family: Roboto;
+
+          font-size: 28px;
+
+          font-weight: normal;
+
+          font-style: normal;
+
+          font-stretch: normal;
+
+          line-height: normal;
+
+          letter-spacing: normal;
+
+          color: #000000;
+        }
+        .claim-date {
+          font-family: Roboto;
+
+          font-size: 12px;
+
+          font-weight: 300;
+
+          font-style: normal;
+
+          font-stretch: normal;
+
+          line-height: normal;
+
+          letter-spacing: normal;
+
+          color: #000000;
+          margin-left: 10px;
+          padding-top: 15px;
+        }
+      }
+
+      .address {
+        margin: 10px 0 20px 0;
+        font-family: Roboto;
+
+        font-size: 12px;
+
+        font-weight: 300;
+
+        font-style: normal;
+
+        font-stretch: normal;
+
+        line-height: normal;
+
+        letter-spacing: normal;
+
+        color: #000000;
+      }
+
+      .description {
+        width: 350px;
+
+        height: 98px;
+        font-family: Roboto;
+
+        font-size: 16px;
+
+        font-weight: 300;
+
+        font-style: normal;
+
+        font-stretch: normal;
+
+        line-height: 1.52;
+
+        letter-spacing: normal;
+
+        color: #000000;
+      }
+
+      .photo-block {
+        width: 350px;
+
+        height: 180px;
+
+        background-color: #c4c4c4;
+
+        margin: 0 0 30px 0;
+      }
+    }
+
+    .right-block {
+      margin-left: 70px;
+
+      .help.button {
+
+        width: 180px;
+
+        height: 29px;
+
+        background-color: #c4c4c4;
+        font-family: Roboto;
+
+        font-size: 18px;
+
+        font-weight: 300;
+
+        font-style: normal;
+
+        font-stretch: normal;
+
+        line-height: 1.52;
+
+        letter-spacing: normal;
+
+        color: #000000;
+        text-align: center;
+      }
+
+      .same-claim-title {
+        text-align: right;
+        font-family: Roboto;
+
+        font-size: 14px;
+
+        font-weight: normal;
+
+        font-style: normal;
+
+        font-stretch: normal;
+
+        line-height: normal;
+
+        letter-spacing: normal;
+
+        color: #000000;
+        margin: 20px 0 20px 0;
+      }
+
+      .claim {
+        box-sizing: border-box;
+
+        padding: 15px 17px;
+
+        width: 180px;
+
+        height: 80px;
+
+        background-color: #c4c4c4;
+
+        margin-bottom: 15px;
+        font-family: Roboto;
+
+        font-size: 12px;
+
+        font-weight: 300;
+
+        font-style: normal;
+
+        font-stretch: normal;
+
+        line-height: normal;
+
+        letter-spacing: normal;
+
+        color: #000000;
+
+      }
+    }
+  }
 }
