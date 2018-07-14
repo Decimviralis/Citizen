@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import NewPage from '@/pages/new-page/new-page.vue'
-import MainPage from '@/pages/main-page/main-page.vue'
-import LoginPage from '@/pages/login-page/login-page.vue'
+import MainPage from '../pages/main-page/main-page.vue'
+import claimPage from '../pages/claim-page/claim-page'
 
 
 Vue.use(Router);
@@ -15,9 +15,9 @@ export default new Router({
       component: MainPage
     },
     {
-      path: '/login-page',
-      name: 'login-page',
-      component: LoginPage
+      path: '/claim',
+      name: 'claim-page',
+      component: claimPage
     }
   ]
 })

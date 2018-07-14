@@ -58,6 +58,8 @@ export default {
 
   },
   methods: {
-
+    goToClaim() {
+      this.$router.push({name: 'claim-page'})
+    }
   }
 }
