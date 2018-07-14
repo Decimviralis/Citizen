@@ -1,2 +1,12 @@
-.mian-page
-  h1 Main page
+.main-page
+  searchPanel
+  .content-block
+    .card-field(v-for="block in contentBlocks")
+      .photo-block
+      .right-block
+        .upper-bar
+          .title {{block.id}}
+          .date 22.02.2018
+        .lower-bar
+          .description-text {{block.description.slice(0,190)}}
+          .more-info-button Подробнее
