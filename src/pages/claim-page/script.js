@@ -1,5 +1,5 @@
 import searchPanel from '../../components/search-panel/search-panel'
-import addPop from '../../components/popups/add-complaint-popup'
+import addPop from '../../components/popups/add-complaint-popup/add-complaint-popup.vue'
 export default {
   name: "claim-page",
   components: {
