@@ -6,11 +6,13 @@
   .content-block
     .card-field(v-for="block in contentBlocks")
       .photo-block
+        img(:src="block.photo" v-if="block.photo")
       .right-block
         .upper-bar
-          .title {{block.id}}
-          .date 22.02.2018
+          .title {{block.title}}
+          .date {{block.created_at}}
         .lower-bar
           .description-text {{block.description.slice(0,190)}}
-          .more-info-button(@click="goToClaim") Подробнее
+             span(v-if="block.description >= 190")
+          .more-info-button(@click="goToClaim(block)") Подробнее
 
