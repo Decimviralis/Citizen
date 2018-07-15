@@ -28,7 +28,7 @@ export default {
         title: this.popTitle,
         description: this.popDesc,
       };
-      axios.post('http://192.168.88.229:8000/api/citizen/citizen/', data)
+      axios.post('http://attrax.digital:8093/api/citizen/citizen/', data)
         .then(
           response => {
             console.log(response.data);

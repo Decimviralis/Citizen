@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     getRequestInfo(){
-      axios.get('http://192.168.88.229:8000/api/complaint/complaint/')
+      axios.get('http://attrax.digital:8093/api/complaint/complaint/')
         .then(
           response => {
             console.log(response.data);
