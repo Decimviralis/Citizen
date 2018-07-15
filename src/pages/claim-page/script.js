@@ -1,4 +1,5 @@
 import searchPanel from '../../components/search-panel/search-panel'
+import addPop from '../../components/popups/add-complaint-popup'
 export default {
   name: "claim-page",
   components: {
