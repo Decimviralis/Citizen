@@ -1,4 +1,5 @@
 .search-panel
+  addComplaintPopup(v-if ="isAdd" v-on:close = "isAdd = false")
   .main-logo
     .logo City.Zen
     .note Сделаем город лучше. Вместе.
@@ -7,4 +8,4 @@
       input(
       placeholder="Найдите жалобы по названию, дате или категориям"
       )
-    .button Добавить жалобу
+    .button(v-on:click="isAdd = true") Добавить жалобу

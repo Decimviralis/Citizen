@@ -2,14 +2,17 @@
   .add-complaint-popup.popup-container
     .popup-header Добавление жалобы
     .popup-text Заголовок
-    .popup-text.bold-text Лавочка на гоголя
+    input.popup-text.bold-text(v-model="popTitle")
+
+    .popup-text Адрес(Улица, дом)
+      br
+      input.popup-text.bold-text(v-model="popAdress")
     .popup-text Ваш комментарий к жалобе
-    textarea.custom-text-area(placeholder="Введите ваш комментарий")
+    textarea.custom-text-area(placeholder="Введите ваш комментарий" v-model="popDesc")
     .popup-text Добавьте фото (опционально)
-    .complaint-img
     .popup-col
-      .button.button_gray Отправить
-      .button.button_white Отмена
+      button.button.button_gray(v-on:click="postData") Отправить
+      button.button.button_white(v-on:click="emitClose") Отмена
 
 
 

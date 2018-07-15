@@ -1,5 +1,31 @@
 @import "../../../assets/scss/main-styles";
 
 .verification-popup {
+}
 
+
+.fileinp{
+  display: none;
+}
+
+.complaint-img{
+  width: 50%;
+}
+
+.complaint-img{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+.custom-text-area{
+  border: 1px solid lightgray;
 }
