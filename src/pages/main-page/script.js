@@ -13,6 +13,10 @@ export default {
   },
   data() {
     return {
+      isAccepted:true,
+      isAdd:false,
+      isVerify:false,
+
       contentBlocks: [
         {
           description: "Лавочка на Гоголя нуждается в помощи! Стоит разбитая уже несколько месяцев. Кто возьмется сколотить новые перекладины и потом все покрасить?",

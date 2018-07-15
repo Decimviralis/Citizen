@@ -1,8 +1,7 @@
-.main-pageacceptComplainPopup
-  acceptComplainPopup
-  addComplaintPopup
-  verificationPopup
-
+.main-page
+  acceptComplainPopup(v-if ="isAccepted")
+  addComplaintPopup(v-if ="isAdd")
+  verificationPopup(v-if ="isVerify")
   searchPanel
   .content-block
     .card-field(v-for="block in contentBlocks")
@@ -14,3 +13,4 @@
         .lower-bar
           .description-text {{block.description.slice(0,190)}}
           .more-info-button(@click="goToClaim") Подробнее
+
