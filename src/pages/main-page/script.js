@@ -1,8 +1,15 @@
 import searchPanel from '../../components/search-panel/search-panel'
+import acceptComplainPopup from '../../components/popups/accept-complaint-popup/accept-complaint-popup'
+import addComplaintPopup from '../../components/popups/add-complaint-popup/add-complaint-popup'
+import verificationPopup from '../../components/popups/verification-popup/verification-popup'
 export default {
   name: "main-page",
   components: {
-    searchPanel
+    searchPanel,
+    acceptComplainPopup,
+    addComplaintPopup,
+    verificationPopup,
+
   },
   data() {
     return {
