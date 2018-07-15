@@ -15,7 +15,7 @@ export default new Router({
       component: MainPage
     },
     {
-      path: '/claim',
+      path: '/claim/:id',
       name: 'claim-page',
       component: claimPage
     }
