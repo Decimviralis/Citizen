@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      isAccepted:true,
+      isAccepted:false,
       isAdd:false,
       isVerify:false,
 
