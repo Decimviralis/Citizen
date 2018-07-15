@@ -16,3 +16,5 @@
           .description-text {{block.description.slice(0,190)}}
              span(v-if="block.description >= 190")
           .more-info-button(@click="goToClaim(block)") Подробнее
+          .description-text {{block.description}}
+          .more-info-button(@click="goToClaim") Подробнее
