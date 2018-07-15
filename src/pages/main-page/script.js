@@ -17,7 +17,7 @@ export default {
     return {
       isAccepted:false,
       isAdd:false,
-      isVerify:false,
+      isVerify:true,
 
       contentBlocks: [
 

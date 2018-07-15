@@ -1,11 +1,13 @@
 .modal-mask
   .verification-popup.popup-container
     .popup-header Авторизируйтесь
-    .popup-text Подтвердите свой номер телефона,  чтобы оставлять жалобы и откликаться на них.
-    input.custom-input(type="text" placeholder="Номер телефона")
-    input.custom-input(type="text" placeholder="Код подтверждения")
-    .button.button_gray Отправить
-    .button.button_white Отмена
+    .popup-text.verification-text(v-if="!isSend") Подтвердите свой номер телефона,  чтобы оставлять жалобы и откликаться на них.
+    .popup-text.verification-text(v-else) Введите ниже СМС-код, который мы только вам отправили. Не пришел код?
+
+    input.custom-input(type="text" placeholder="Номер телефона" v-if="isSend")
+    input.custom-input(type="text" placeholder="Код подтверждения" v-else)
+    button.button.button_gray Отправить
+    button.button.button_white Отмена
 
 
 

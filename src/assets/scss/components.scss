@@ -6,7 +6,7 @@
   border: none;
 }
 .button_gray {
-  background-color: #c4c4c4;
+  background-color: #4CA96C;
 
 }
 .button_white {
@@ -20,4 +20,31 @@
   padding: 15px 23px 15px 15px;
   resize: none;
   border: none;
+}
+.custom-input {
+  margin-bottom: 30px;
+  border:none;
+  width:420px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  outline: none;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.52;
+  letter-spacing: normal;
+  color: #000000;
+  &::placeholder{
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #565656;
+  }
 }
