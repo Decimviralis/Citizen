@@ -49,8 +49,9 @@ export default {
         )
     },
     goToClaim(block) {
+      console.log(this.contentBlocks[block]);
       let params = {id: block.id};
-      this.$router.push({name: 'claim-page',  params: params},)
+      this.$router.push({name: 'claim-page',  params: params})
     }
   }
 }
