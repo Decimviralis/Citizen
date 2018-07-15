@@ -1,4 +1,6 @@
 import searchPanel from '../../components/search-panel/search-panel'
+import axios from "axios/index";
+import moment from "moment/moment";
 import addPop from '../../components/popups/add-complaint-popup/add-complaint-popup.vue'
 export default {
   name: "claim-page",
@@ -7,20 +9,51 @@ export default {
   },
   data: function () {
     return {
-      description: "Лавочка на Гоголя нуждается в помощи! Стоит разбитая уже несколько месяцев. Кто возьмется сколотить новые перекладины и потом все покрасить?",
-      claims: [
-        "Лавочка на Кирова",
-        "Лавочка на Кирова",
-        "Лавочка на Кирова",
-        "Лавочка на Кирова",
-        "Лавочка на Кирова"
-      ],
-      photos: [
-        " ",
-        " "
-      ]
+      description: "",
+      claim: null,
+      photos: [],
+      id: this.$route.params.id,
+      sameClaims: []
     }
   },
+  created() {
+    this.getRequestInfo();
+    this.getClaims();
+  },
   methods: {
+    getRequestInfo(){
+      console.log(this.id);
+      axios.get('http://192.168.88.229:8000/api/complaint/complaint/' + this.id)
+        .then(
+          response => {
+            console.log(response.data);
+            this.claim = response.data;
+            this.claim.created_at = moment(this.claim.created_at).format("DD.MM.YYYY")
+            // this.contentBlocks = response.data;
+            // for(let item in this.contentBlocks){
+            //   this.contentBlocks[item].created_at = moment(this.contentBlocks[item].created_at).format("DD.MM.YYYY")
+            // }
+          }
+        )
+        .catch(
+          function (error) {
+            console.log(error)
+          }
+        )
+    },
+    getClaims() {
+      axios.get('http://192.168.88.229:8000/api/complaint/complaint/')
+        .then(
+          response => {
+            console.log(response.data);
+            this.sameClaims = response.data;
+          }
+        )
+        .catch(
+          function (error) {
+            console.log(error)
+          }
+        )
+    }
   }
 }
